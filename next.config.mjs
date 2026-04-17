@@ -3,11 +3,16 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
 
-  // ⚠️  IMPORTANTE: debe coincidir exactamente con el nombre del repositorio en GitHub
-  // Si el repo se llama "cv-ronald-nino" → basePath: '/cv-ronald-nino'
-  // Si el repo es "ronaldnino.github.io" (usuario root) → comentar esta línea
-  basePath: '/cv-ronald-nino',
-  assetPrefix: '/cv-ronald-nino/',
+  // ──────────────────────────────────────────────────────────────
+  // REGLA DE ORO para GitHub Pages:
+  //
+  //  • Dominio personalizado (ej: cv.ninodevops.dev)
+  //    → NO basePath, NO assetPrefix  ← configuración actual
+  //
+  //  • Sub-ruta de github.io (ej: ronaldnino.github.io/cv-ronald-nino)
+  //    → basePath: '/cv-ronald-nino'
+  //    → assetPrefix: '/cv-ronald-nino/'
+  // ──────────────────────────────────────────────────────────────
 
   images: {
     unoptimized: true,

@@ -4,8 +4,8 @@ import CertificationCard from './CertificationCard'
 
 // Map cert titles → local image paths
 const certImages: Record<string, string> = {
-  'AWS Certified Solutions Architect – Associate': 'aws-saa.png',
-  'AWS Certified Cloud Practitioner':             'aws-ccp.png',
+  'AWS Certified Solutions Architect – Associate': '/aws-saa.png',
+  'AWS Certified Cloud Practitioner':             '/aws-ccp.png',
 }
 
 export default function Certifications() {
