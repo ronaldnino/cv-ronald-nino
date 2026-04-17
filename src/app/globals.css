@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap');
+/* ─── FUENTES LOCALES (bundleadas — sin dependencia de CDN externo) ─── */
+@import '@fontsource/space-mono/400.css';
+@import '@fontsource/space-mono/700.css';
+@import '@fontsource/sora/300.css';
+@import '@fontsource/sora/400.css';
+@import '@fontsource/sora/600.css';
+@import '@fontsource/sora/700.css';
 
 @tailwind base;
 @tailwind components;
@@ -16,9 +22,7 @@
   --heading: #f8fafc;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background-color: var(--bg);
@@ -61,13 +65,5 @@ body::before {
 
   .glow-accent {
     box-shadow: 0 0 0 4px rgba(0,212,255,.15);
-  }
-
-  .card-hover {
-    transition: border-color 0.25s, transform 0.25s;
-  }
-
-  .card-hover:hover {
-    transform: translateY(-3px);
   }
 }
